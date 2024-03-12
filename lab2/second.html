@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/lab2/lab2.css" type="text/css" />
   </head>
   <body>
     <h1 class="text-center mt-2">Звіти з лабораторних робіт</h1>
@@ -18,23 +19,22 @@
       Backend розробок"
     </h2>
     <h3 class="text-center mt-4">Студент групи ІС-11 Воробйов О.</h3>
-    <img src="Photo.jpg" width="250px" class="d-block m-auto" />
     <img src="/Screenshot_2.jpg" width="250px" class="d-block m-auto" />
     <div class="labs">
-      <div class="lab1 active">
+      <div class="lab1">
         <a href="/lab1/index.html">Лабораторна <br />робота &#8470;1</a>
       </div>
-      <div class="lab2">
+      <div class="lab2 active">
         <a href="/lab2/index.html">Лабораторна <br />робота &#8470;2</a>
       </div>
       <div class="lab3">
-        <a href="#">Лабораторна <br />робота &#8470;3</a>
+        <a href="/lab3/index.html">Лабораторна <br />робота &#8470;3</a>
       </div>
       <div class="lab4">
-        <a href="#">Лабораторна <br />робота &#8470;4</a>
+        <a href="/lab4/index.html">Лабораторна <br />робота &#8470;4</a>
       </div>
       <div class="lab5">
-        <a href="#">Лабораторна <br />робота &#8470;5</a>
+        <a href="/lab5/index.html">Лабораторна <br />робота &#8470;5</a>
       </div>
       <div class="lab6">
         <a href="#">Лабораторна <br />робота &#8470;6</a>
@@ -53,57 +53,52 @@
       <aside class="aside">
         <div class="blocks">
           <div class="lab-block">
-            <a href="first.html" class="link">Опис предметного середовища</a>
-          </div>
-          <div class="lab-block active">
-            <a href="#" class="link"
-              >Тема, мета, місце розташування <br />лаби &#8470;1</a
+            <a href="mainpage.html" class="link"
+              >ПОСТАНОВКА ЗАДАЧІ <br />
+              лабораторної роботи &#8470;2</a
             >
           </div>
           <div class="lab-block">
-            <a href="third.html" class="link">СТРУКТУРА ДОКУМЕНТУ</a>
+            <a href="first.html" class="link text-uppercase"
+              >Способи підключення стилів</a
+            >
+          </div>
+          <div class="lab-block active">
+            <a href="second.html" class="link text-uppercase">селектори</a>
           </div>
           <div class="lab-block ms-5">
-            <a href="fourth.html" class="link">HTML-код ТАБЛИЦЬ</a>
+            <a href="third.html" class="link">Селектори тегу</a>
           </div>
           <div class="lab-block ms-5">
-            <a href="fifth.html" class="link">HTML-код ФОРМИ</a>
+            <a href="fourth.html" class="link">Селектори класу</a>
           </div>
           <div class="lab-block ms-5">
-            <a href="sixth.html" class="link">HTML-код ЗОБРАЖЕННЯ</a>
+            <a href="fifth.html" class="link">Селектори ідентифікаторів</a>
+          </div>
+          <div class="lab-block ms-5">
+            <a href="sixth.html" class="link">Інші селектори</a>
           </div>
           <div class="lab-block">
-            <a href="seventh.html" class="link">ВИСНОВКИ</a>
+            <a href="seventh.html" class="link"
+              >CSS: Шрифти Текст Таблиці Фон Контур Списки СSS Просунутий</a
+            >
+          </div>
+          <div class="lab-block">
+            <a href="eighth.html" class="link text-uppercase">висновки</a>
           </div>
         </div>
       </aside>
       <content class="content">
-        <table>
-          <thead>
-            <tr>
-              <th width="50%"></th>
-              <th width="50%">Значення</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Тема</td>
-              <td>
-                СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОГО ГАЛУЗІ. РОБОТА З
-                ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, ФОРМАМИ в HTML-ДОКУМЕНТІ
-              </td>
-            </tr>
-            <tr>
-              <td>Мета</td>
-              <td>
-                придбати практичні навички роботи з HTML-документом,
-                таблицями,формами, зображеннями, посиланнями. Створити шаблон
-                звітного HTML-документом для відображення результатів роботи
-                всіх лабораторних робіт.
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="first"></div>
+        <div id="second">Ідентифікатор second</div>
+        <textarea rows="20" cols="60">
+          &lt;div class="lab-block"&gt;
+            &lt;a href="fourth.html" class="link text-uppercase"
+              &gt;плаваючі елементи&lt;/a
+            &gt;
+          &lt;/div&gt;
+        </textarea>
+        <img src="images/id-1.jpg" alt="id-1" />
       </content>
     </main>
   </body>

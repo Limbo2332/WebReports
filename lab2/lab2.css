@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.first-content {
+  margin: 14px auto;
+  width: 60%;
+}
+#first {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: red;
+}
+#second {
+  margin: 14px auto;
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#padding {
+  padding: 15px;
+  background-color: antiquewhite;
+  text-align: justify;
+}
+#padding > p {
+  font-size: 16px;
+  font-weight: 600;
+
+  letter-spacing: 0.02em;
+}
+
+#margin {
+  margin: 15px;
+  background-color: aquamarine;
+}
+
+#margin p {
+  font-size: 16px;
+  font-weight: 600;
+
+  letter-spacing: 0.02em;
+}
+
+#margin-padding {
+  margin: 15px;
+  padding: 15px;
+
+  background: rgb(250, 235, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(250, 235, 215, 1) 0%,
+    rgba(127, 255, 212, 1) 100%
+  );
+}
+#text img.first-img {
+  float: right;
+}
+#text img.second-img {
+  float: left;
+  width: 500px;
+}
+#text img {
+  padding: 10px;
+}
+.selectors {
+  text-align: center;
+}
+abbr {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+
+  color: yellowgreen;
+}
+.selector-class,
+#selector-id {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+input[type="button"] {
+  font-size: 18px;
+}
