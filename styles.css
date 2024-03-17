@@ -429,3 +429,9 @@ footer {
   width: 100%;
   height: 100px;
 }
+
+.main-photo {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
