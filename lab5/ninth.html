@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" type="text/css" />
+    <link rel="stylesheet" href="/lab2/lab2.css" type="text/css" />
+  </head>
+  <body>
+    <h1 class="text-center mt-2">Звіти з лабораторних робіт</h1>
+    <h2 class="text-center">
+      З дисципліни "WEB - орієнтовані Технології 2024. Основи Frontend та
+      Backend розробок"
+    </h2>
+    <h3 class="text-center mt-4">Студент групи ІС-11 Воробйов О.</h3>
+    <img src="../Photo.jpg" width="100px" class="main-photo" />
+    <div class="labs">
+      <div class="lab1">
+        <a href="/lab1/index.html">Лабораторна <br />робота &#8470;1</a>
+      </div>
+      <div class="lab2">
+        <a href="/lab2/index.html">Лабораторна <br />робота &#8470;2</a>
+      </div>
+      <div class="lab3">
+        <a href="/lab3/index.html">Лабораторна <br />робота &#8470;3</a>
+      </div>
+      <div class="lab4">
+        <a href="/lab4/index.html">Лабораторна <br />робота &#8470;4</a>
+      </div>
+      <div class="lab5 active">
+        <a href="/lab5/index.html">Лабораторна <br />робота &#8470;5</a>
+      </div>
+      <div class="lab6">
+        <a href="#">Лабораторна <br />робота &#8470;6</a>
+      </div>
+      <div class="lab7">
+        <a href="#">Лабораторна <br />робота &#8470;7</a>
+      </div>
+      <div class="lab8">
+        <a href="#">Лабораторна <br />робота &#8470;8</a>
+      </div>
+      <div class="lab9">
+        <a href="#">Лабораторна <br />робота &#8470;9</a>
+      </div>
+    </div>
+    <main class="main">
+      <aside class="aside">
+        <div class="blocks">
+          <div class="lab-block">
+            <a href="mainpage.html" class="link"
+              >Тема, мета, місце <br />
+              розташування сайту, звіту</a
+            >
+          </div>
+          <div class="lab-block">
+            <a href="first.html" class="link">ЗАВДАННЯ &#8470;1 <br /> </a>
+          </div>
+          <div class="lab-block ms-5">
+            <a href="second.html" class="link">Код JavaScript</a>
+          </div>
+          <div class="lab-block">
+            <a href="third.html" class="link">ЗАВДАННЯ &#8470;2</a>
+          </div>
+          <div class="lab-block ms-5">
+            <a href="fourth.html" class="link">Вигляд у формі</a>
+          </div>
+          <div class="lab-block ms-5">
+            <a href="fifth.html" class="link">Код JavaScript</a>
+          </div>
+          <div class="lab-block">
+            <a href="sixth.html" class="link">ЗАВДАННЯ &#8470;3</a>
+          </div>
+          <div class="lab-block ms-5">
+            <a href="seventh.html" class="link">HTML код форми</a>
+          </div>
+          <div class="lab-block ms-5">
+            <a href="eighth.html" class="link">CSS код форми</a>
+          </div>
+          <div class="lab-block ms-5 active">
+            <a href="ninth.html" class="link">JS код форми</a>
+          </div>
+          <div class="lab-block">
+            <a href="tenth.html" class="link">ВИСНОВКИ</a>
+          </div>
+        </div>
+      </aside>
+      <content class="content">
+        <pre><code> function getId(id) {
+          return document.getElementById(id);
+        }
+        
+        const myForm = document.querySelector("#form"),
+          myFormInputs = document.querySelectorAll(".form-control");
+        
+        function validatePhone(phone) {
+          let re = /\+380\d{9}/;
+          return re.test(String(phone));
+        }
+        
+        function nextElement(next, content) {
+          next.classList.remove("d-none");
+          next.classList.add("form-validation");
+          next.textContent = content;
+        }
+        
+        function deleteNextElement(next) {
+          next.classList.remove("form-validation");
+          next.classList.add("d-none");
+          next.textContent = "";
+        }
+        
+        myForm.onsubmit = function () {
+          myFormInputs.forEach(function (input) {
+            if (input.value == "") {
+              input.classList.add("error");
+        
+              nextElement(input.nextElementSibling, "Поле обов'язкове для заповнення");
+            } else {
+              input.classList.remove("error");
+              deleteNextElement(input.nextElementSibling);
+            }
+          });
+          if (!validatePhone(getId("phoneNumber").value)) {
+            getId("phoneNumber").classList.add("error");
+        
+            nextElement(
+              getId("phoneNumber").nextElementSibling,
+              "Номер телефону не дійсний."
+            );
+          } else {
+            getId("phoneNumber").classList.remove("error");
+            deleteNextElement(getId("phoneNumber").nextElementSibling);
+          }
+          let count = 0;
+          document.querySelectorAll(".validate-label").forEach(function (label) {
+            if (!label.classList.contains("d-none")) {
+              count++;
+            }
+          });
+          if (count >= 1) {
+            return false;
+          } else {
+            return true;
+          }
+        };
+        
+        </code></pre>
+      </content>
+    </main>
+  </body>
+</html>
