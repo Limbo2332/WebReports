@@ -1,0 +1,108 @@
+.content :first-child {
+  margin-top: 0;
+}
+.d-none {
+  display: none;
+}
+
+.date {
+  text-align: center;
+  margin-top: 15px !important;
+  margin-bottom: 0;
+  position: relative;
+}
+.date button {
+  position: inherit;
+  top: 0px;
+  right: 24px;
+  background: url("/lab4/calendar.png");
+  width: 16px;
+  height: 16px;
+  z-index: 1000;
+}
+
+.calendar-wrapper {
+  width: 80%;
+  margin: 3em auto;
+  padding: 2em;
+  border: 1px solid #dcdcff;
+  border-radius: 5px;
+  background: #fff;
+}
+
+table {
+  clear: both;
+  width: 100%;
+  border: 1px solid #dcdcff;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: #444;
+}
+td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #dcdcff;
+  border-top: 1px solid #dcdcff;
+  width: 14.28571429%;
+}
+thead td {
+  border: none;
+  color: #28283b;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+td.normal {
+  cursor: pointer;
+}
+td.normal:hover {
+  background-color: aquamarine;
+  color: #28283b;
+}
+
+td.not-current {
+  color: #c0c0c0;
+}
+
+tr.years td {
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+
+#btnPrev {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+}
+
+#btnPrev,
+#btnNext {
+  margin-top: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #c0c0c0;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+#btnPrev:hover,
+#btnNext:hover {
+  color: #28283b;
+  font-weight: bold;
+}
+
+.btn-block {
+  position: relative;
+}
+.button-fixed {
+  position: absolute;
+  left: 365px;
+}
