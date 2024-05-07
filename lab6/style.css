@@ -1,0 +1,12 @@
+.task-div {
+  background-color: lightgreen;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#block-to-resize {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 16px;
+  border: 4px dashed red;
+}
