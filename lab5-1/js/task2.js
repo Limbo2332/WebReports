@@ -24,3 +24,5 @@ getProductDetails(
 		console.error("Error:", error);
 	}
 );
+
+console.log(getProductDetails(productId));
